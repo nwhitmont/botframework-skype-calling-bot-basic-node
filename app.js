@@ -1,3 +1,7 @@
+/*
+    Skype calling bot - basic example
+*/
+
 var restify = require('restify');
 var calling = require('botbuilder-calling');
 
