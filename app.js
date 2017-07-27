@@ -9,7 +9,7 @@ server.listen(process.env.port || process.env.PORT || 3978, function () {
 
 // Create calling bot
 var connector = new calling.CallConnector({
-    callbackUrl: 'https://nils-skype-calling-bot-basic-node.azurewebsites.net/api/calls',
+    callbackUrl: process.env.SKYPE_CALLING_ENDPOINT,
     appId: process.env.MICROSOFT_APP_ID,
     appPassword: process.env.MICROSOFT_APP_PASSWORD
 });
