@@ -9,9 +9,9 @@ server.listen(process.env.port || process.env.PORT || 3978, function () {
 
 // Create calling bot
 var connector = new calling.CallConnector({
-    callbackUrl: 'https://<your host>/api/calls',
-    appId: '<your bots app id>',
-    appPassword: '<your bots app password>'
+    callbackUrl: 'https://nils-skype-calling-bot-basic-node.azurewebsites.net/api/calls',
+    appId: process.env.MICROSOFT_APP_ID,
+    appPassword: process.env.MICROSOFT_APP_PASSWORD
 });
 var bot = new calling.UniversalCallBot(connector);
 server.post('/api/calls', connector.listen());
@@ -20,3 +20,5 @@ server.post('/api/calls', connector.listen());
 bot.dialog('/', function (session) {
     session.send('Watson... come here!');
 });
+
+// END OF LINE

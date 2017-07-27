@@ -1,0 +1,34 @@
+{
+  "name": "botframework-skype-calling-bot-basic-node",
+  "version": "1.0.0",
+  "description": "bare bones calling bot demo",
+  "main": "app.js",
+  "engines": {
+    "node": "6.10.10",
+    "npm": "3.10.10"
+  },
+  "scripts": {
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nwhitmont/botframework-skype-calling-bot-basic-node.git"
+  },
+  "keywords": [
+    "botframework",
+    "botbuilder",
+    "skype",
+    "calling",
+    "bot"
+  ],
+  "author": "Nils Whitmont",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nwhitmont/botframework-skype-calling-bot-basic-node/issues"
+  },
+  "homepage": "https://github.com/nwhitmont/botframework-skype-calling-bot-basic-node#readme",
+  "dependencies": {
+    "botbuilder-calling": "^3.0.1",
+    "restify": "^5.0.1"
+  }
+}
